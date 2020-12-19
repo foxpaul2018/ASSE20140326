@@ -1,0 +1,385 @@
+<window use="com.fsb.asse.TextWnd" id="tw" height="100%">
+	<style>
+		.myimg { margin: 5px; border: 1px solid #B0C75E; }
+		div.z-column-cnt { text-align: center; font-weight: bold; }
+		div.z-row-cnt span { font-family: arial, sans-serif; color:
+		#0E3A99; }
+	</style>
+
+	<toolbar>
+		<toolbarbutton label="当前权重" />
+		<toolbarbutton label="10%" />
+	</toolbar>
+	<grid id="yes" height="100%">
+		<columns>
+			<column label="" sort="auto" width="5%" />
+			<column label="项目编号" sort="auto" width="10%" />
+			<column label="构面" width="40%" />
+			<column label="权重" sort="auto" width="40%" />
+
+			<column label="" sort="auto" width="5%" />
+		</columns>
+		<rows>
+			<row context="guding">
+				<detail open="true">
+					<hlayout>
+						<grid>
+							<columns sizable="true">
+								<column label="衡量指标" sort="auto"
+									width="80%" />
+								<column label="指标权重" width="10%" />
+
+								<column label="" sort="auto"
+									width="10%" />
+							</columns>
+							<rows>
+								<row context="2">
+									<textbox rows="5" cols="145" />
+									<textbox />
+									<vbox>
+										<button label="+"
+											onClick="tw.onAddRow(self)" />
+										<button label="-"
+											onClick="tw.onMinusRow(self)" />
+									</vbox>
+								</row>
+
+
+							</rows>
+
+						</grid>
+					</hlayout>
+				</detail>
+				<label value="1" />
+				<combobox value="财务" context="f">
+					<comboitem label="财务" context="f" />
+					<comboitem label="顾客" context="c" />
+					<comboitem label="内部流程" context="i" />
+					<comboitem label="创新与学习" context="s" />
+				</combobox>
+				<textbox />
+
+				<vbox>
+					<button label="+" onClick="tw.onAddRow(self)" />
+					<button label="-" onClick="tw.onMinusRow(self)" />
+				</vbox>
+			</row>
+			<row context="guding">
+				<detail open="true">
+					<hlayout>
+						<grid>
+							<columns sizable="true">
+								<column label="衡量指标" sort="auto"
+									width="80%" />
+								<column label="指标权重" width="10%" />
+
+								<column label="" sort="auto"
+									width="10%" />
+							</columns>
+							<rows>
+								<row context="2">
+									<textbox rows="5" cols="145" />
+									<textbox />
+									<vbox>
+										<button label="+"
+											onClick="tw.onAddRow(self)" />
+										<button label="-"
+											onClick="tw.onMinusRow(self)" />
+									</vbox>
+								</row>
+
+
+							</rows>
+
+						</grid>
+					</hlayout>
+				</detail>
+				<label value="2" />
+				<combobox value="财务" context="f">
+					<comboitem label="财务" context="f" />
+					<comboitem label="顾客" context="c" />
+					<comboitem label="内部流程" context="i" />
+					<comboitem label="创新与学习" context="s" />
+				</combobox>
+				<textbox />
+
+				<vbox>
+					<button label="+" onClick="tw.onAddRow(self)" />
+					<button label="-" onClick="tw.onMinusRow(self)" />
+				</vbox>
+			</row>
+
+
+			<row context="guding">
+				<detail open="true">
+					<hlayout>
+						<grid>
+							<columns sizable="true">
+								<column label="衡量指标" sort="auto"
+									width="80%" />
+								<column label="指标权重" width="10%" />
+
+								<column label="" sort="auto"
+									width="10%" />
+							</columns>
+							<rows>
+								<row context="2">
+									<textbox rows="5" cols="145" />
+									<textbox />
+									<vbox>
+										<button label="+"
+											onClick="tw.onAddRow(self)" />
+										<button label="-"
+											onClick="tw.onMinusRow(self)" />
+									</vbox>
+								</row>
+
+
+							</rows>
+
+						</grid>
+					</hlayout>
+				</detail>
+				<label value="3" />
+				<combobox value="顾客" context="c">
+					<comboitem label="财务" context="f" />
+					<comboitem label="顾客" context="c" />
+					<comboitem label="内部流程" context="i" />
+					<comboitem label="创新与学习" context="s" />
+				</combobox>
+				<textbox />
+
+				<vbox>
+					<button label="+" onClick="tw.onAddRow(self)" />
+					<button label="-" onClick="tw.onMinusRow(self)" />
+				</vbox>
+			</row>
+					<row context="guding">
+				<detail open="true">
+					<hlayout>
+						<grid>
+							<columns sizable="true">
+								<column label="衡量指标" sort="auto"
+									width="80%" />
+								<column label="指标权重" width="10%" />
+
+								<column label="" sort="auto"
+									width="10%" />
+							</columns>
+							<rows>
+								<row context="2">
+									<textbox rows="5" cols="145" />
+									<textbox />
+									<vbox>
+										<button label="+"
+											onClick="tw.onAddRow(self)" />
+										<button label="-"
+											onClick="tw.onMinusRow(self)" />
+									</vbox>
+								</row>
+
+
+							</rows>
+
+						</grid>
+					</hlayout>
+				</detail>
+				<label value="4" />
+				<combobox value="顾客" context="c">
+					<comboitem label="财务" context="f" />
+					<comboitem label="顾客" context="c" />
+					<comboitem label="内部流程" context="i" />
+					<comboitem label="创新与学习" context="s" />
+				</combobox>
+				<textbox />
+
+				<vbox>
+					<button label="+" onClick="tw.onAddRow(self)" />
+					<button label="-" onClick="tw.onMinusRow(self)" />
+				</vbox>
+			</row>
+					<row context="guding">
+				<detail open="true">
+					<hlayout>
+						<grid>
+							<columns sizable="true">
+								<column label="衡量指标" sort="auto"
+									width="80%" />
+								<column label="指标权重" width="10%" />
+
+								<column label="" sort="auto"
+									width="10%" />
+							</columns>
+							<rows>
+								<row context="2">
+									<textbox rows="5" cols="145" />
+									<textbox />
+									<vbox>
+										<button label="+"
+											onClick="tw.onAddRow(self)" />
+										<button label="-"
+											onClick="tw.onMinusRow(self)" />
+									</vbox>
+								</row>
+
+
+							</rows>
+
+						</grid>
+					</hlayout>
+				</detail>
+				<label value="5" />
+				<combobox value="内部流程" context="i">
+					<comboitem label="财务" context="f" />
+					<comboitem label="顾客" context="c" />
+					<comboitem label="内部流程" context="i" />
+					<comboitem label="创新与学习" context="s" />
+				</combobox>
+				<textbox />
+
+				<vbox>
+					<button label="+" onClick="tw.onAddRow(self)" />
+					<button label="-" onClick="tw.onMinusRow(self)" />
+				</vbox>
+			</row>
+					<row context="guding">
+				<detail open="true">
+					<hlayout>
+						<grid>
+							<columns sizable="true">
+								<column label="衡量指标" sort="auto"
+									width="80%" />
+								<column label="指标权重" width="10%" />
+
+								<column label="" sort="auto"
+									width="10%" />
+							</columns>
+							<rows>
+								<row context="2">
+									<textbox rows="5" cols="145" />
+									<textbox />
+									<vbox>
+										<button label="+"
+											onClick="tw.onAddRow(self)" />
+										<button label="-"
+											onClick="tw.onMinusRow(self)" />
+									</vbox>
+								</row>
+
+
+							</rows>
+
+						</grid>
+					</hlayout>
+				</detail>
+				<label value="6" />
+				<combobox value="内部流程" context="i">
+					<comboitem label="财务" context="f" />
+					<comboitem label="顾客" context="c" />
+					<comboitem label="内部流程" context="i" />
+					<comboitem label="创新与学习" context="s" />
+				</combobox>
+				<textbox />
+
+				<vbox>
+					<button label="+" onClick="tw.onAddRow(self)" />
+					<button label="-" onClick="tw.onMinusRow(self)" />
+				</vbox>
+			</row>
+					<row context="guding">
+				<detail open="true">
+					<hlayout>
+						<grid>
+							<columns sizable="true">
+								<column label="衡量指标" sort="auto"
+									width="80%" />
+								<column label="指标权重" width="10%" />
+
+								<column label="" sort="auto"
+									width="10%" />
+							</columns>
+							<rows>
+								<row context="2">
+									<textbox rows="5" cols="145" />
+									<textbox />
+									<vbox>
+										<button label="+"
+											onClick="tw.onAddRow(self)" />
+										<button label="-"
+											onClick="tw.onMinusRow(self)" />
+									</vbox>
+								</row>
+
+
+							</rows>
+
+						</grid>
+					</hlayout>
+				</detail>
+				<label value="7" />
+				<combobox value="创新与学习" context="s">
+					<comboitem label="财务" context="f" />
+					<comboitem label="顾客" context="c" />
+					<comboitem label="内部流程" context="i" />
+					<comboitem label="创新与学习" context="s" />
+				</combobox>
+				<textbox />
+
+				<vbox>
+					<button label="+" onClick="tw.onAddRow(self)" />
+					<button label="-" onClick="tw.onMinusRow(self)" />
+				</vbox>
+			</row>
+					<row context="guding">
+				<detail open="true">
+					<hlayout>
+						<grid>
+							<columns sizable="true">
+								<column label="衡量指标" sort="auto"
+									width="80%" />
+								<column label="指标权重" width="10%" />
+
+								<column label="" sort="auto"
+									width="10%" />
+							</columns>
+							<rows>
+								<row context="2">
+									<textbox rows="5" cols="145" />
+									<textbox />
+									<vbox>
+										<button label="+"
+											onClick="tw.onAddRow(self)" />
+										<button label="-"
+											onClick="tw.onMinusRow(self)" />
+									</vbox>
+								</row>
+
+
+							</rows>
+
+						</grid>
+					</hlayout>
+				</detail>
+				<label value="8" />
+				<combobox value="创新与学习" context="s">
+					<comboitem label="财务" context="f" />
+					<comboitem label="顾客" context="c" />
+					<comboitem label="内部流程" context="i" />
+					<comboitem label="创新与学习" context="s" />
+				</combobox>
+				<textbox />
+
+				<vbox>
+					<button label="+" onClick="tw.onAddRow(self)" />
+					<button label="-" onClick="tw.onMinusRow(self)" />
+				</vbox>
+			</row>
+			
+
+		</rows>
+	</grid>
+
+
+
+</window>
+

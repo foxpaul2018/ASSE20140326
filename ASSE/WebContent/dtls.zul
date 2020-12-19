@@ -1,0 +1,49 @@
+<window use="com.fsb.asse.DtlsWnd" id="dtlsw" >
+	<style>
+		.myimg { margin: 5px; border: 1px solid #B0C75E; }
+		div.z-column-cnt { text-align: center; font-weight: bold; }
+		div.z-row-cnt span { font-family: arial, sans-serif; color:
+		#0E3A99; }
+	</style>
+
+
+	<toolbar>
+		<toolbarbutton label="添加" onClick="dtlsw.onAdd()"  style="font-size:10pt"/>
+		<toolbarbutton label="删除" onClick="dtlsw.onRemove()"  style="font-size:10pt"/>
+		<toolbarbutton label="保存" onClick="dtlsw.onSave()"  style="font-size:10pt"/>
+		<toolbarbutton label="关闭" onClick="dtlsw.onClose()"  style="font-size:10pt"/>
+	</toolbar>
+	<listbox id="dtls" context="details" multiple="true"
+		checkmark="true" height="100%">
+		<listhead>
+			<listheader label="衡量指标" />
+			<listheader label="指标权重%" />
+		</listhead>
+
+		<listitem>
+			<listcell>
+				<textbox rows="3" cols="90" />
+			</listcell>
+			<listcell>
+				<intbox onChange="dtlsw.onDos(self)" />
+			</listcell>
+
+		</listitem>
+		<!-- <listitem>
+			<listcell>
+				<textbox rows="3" cols="90" />
+			</listcell>
+			<listcell>
+				<intbox onChange="dtlsw.onDos(self)" />
+			</listcell>
+
+		</listitem> -->
+		<listfoot>
+			<listfooter label="当前权重" id="last" />
+
+		</listfoot>
+	</listbox>
+
+
+</window>
+

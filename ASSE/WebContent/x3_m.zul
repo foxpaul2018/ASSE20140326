@@ -1,0 +1,38 @@
+<?page title="年初目标制定" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window title="年初目标制定" border="normal">
+		<listbox id="box" context="details" multiple="true"
+			checkmark="true" height="100%">
+			<listhead>
+				<listheader label="员工编号" />
+				<listheader label="中文姓名" />
+				<listheader label="直属部门" />
+				<listheader label="最近打分人" />
+				<listheader label="考核主管" />
+				<listheader label="考核表选择" />
+				<listheader label="考核类型" />
+			
+				
+			
+				<listheader label="" />
+				<listheader label="考核状态" />
+				<listheader label="查看明细" />
+			</listhead>
+
+			<listitem context="guding">
+				<listcell label="0606" />
+				<listcell label="xxxxxx" />
+				<listcell label="虚拟银行部" />
+				<listcell label="" />
+				<listcell label="xxxxxxx" />
+				<listcell label="管理者" />
+				<listcell label="普通" />
+			
+				
+				<listcell label="修改" />
+				<listcell label="未确认" />
+				<listcell label="查看" />
+			</listitem>
+		</listbox>
+	</window>
+</zk>

@@ -1,0 +1,186 @@
+<window use="com.fsb.asse.TextWnd" id="tw" height="100%">
+	<toolbar>
+		<toolbarbutton label="添加项目" onClick="tw.onAdd()"  style="font-size:10pt" image="/images/add.png"/>
+		<toolbarbutton label="删除项目" onClick="tw.onRemove()"  style="font-size:10pt" image="/images/minus.png"/>
+		<toolbarbutton label="保存" onClick="tw.onJustSave()" style="font-size:10pt" image="/images/save.png"/>
+		<toolbarbutton label="提交" onClick="tw.onJustSubmit()" style="font-size:10pt" image="/images/submit.png"/>
+	</toolbar>
+	<listbox id="box" context="details" multiple="true" checkmark="true"
+		height="100%">
+		<listhead>
+			<listheader label="项目编号" />
+			<listheader label="构面" />
+			<listheader label="权重" />
+			<listheader label="" />
+		</listhead>
+
+		<listitem context="guding">
+			<listcell>
+				<label value="1" />
+			</listcell>
+			<listcell>
+				<combobox value="财务" context="f" disabled="true">
+					<comboitem label="财务" context="f" />
+					<comboitem label="顾客" context="c" />
+					<comboitem label="内部流程" context="i" />
+					<comboitem label="创新与学习" context="s" />
+				</combobox>
+			</listcell>
+			<listcell>
+				<intbox onChange="tw.onDos(self)" />
+			</listcell>
+			<listcell>
+				<label value="衡量指标未设" style="color:red"
+					onClick="tw.addDtls(self)" />
+			</listcell>
+		</listitem>
+		<listitem context="guding">
+			<listcell>
+				<label value="2" />
+			</listcell>
+			<listcell>
+				<combobox value="财务" context="f" disabled="true">
+					<comboitem label="财务" context="f" />
+					<comboitem label="顾客" context="c" />
+					<comboitem label="内部流程" context="i" />
+					<comboitem label="创新与学习" context="s" />
+				</combobox>
+			</listcell>
+			<listcell>
+				<intbox onChange="tw.onDos(self)" />
+			</listcell>
+			<listcell>
+				<label value="衡量指标未设" style="color:red"
+					onClick="tw.addDtls(self)" />
+			</listcell>
+		</listitem>
+		<listitem context="guding">
+			<listcell>
+				<label value="3" />
+			</listcell>
+			<listcell>
+				<combobox value="顾客" context="c" disabled="true">
+					<comboitem label="财务" context="f" />
+					<comboitem label="顾客" context="c" />
+					<comboitem label="内部流程" context="i" />
+					<comboitem label="创新与学习" context="s" />
+				</combobox>
+			</listcell>
+			<listcell>
+				<intbox onChange="tw.onDos(self)" />
+			</listcell>
+			<listcell>
+				<label value="衡量指标未设" style="color:red"
+					onClick="tw.addDtls(self)" />
+			</listcell>
+		</listitem>
+		<listitem context="guding">
+			<listcell>
+				<label value="4" />
+			</listcell>
+			<listcell>
+				<combobox value="顾客" context="c" disabled="true">
+					<comboitem label="财务" context="f" />
+					<comboitem label="顾客" context="c" />
+					<comboitem label="内部流程" context="i" />
+					<comboitem label="创新与学习" context="s" />
+				</combobox>
+			</listcell>
+			<listcell>
+				<intbox onChange="tw.onDos(self)" />
+			</listcell>
+			<listcell>
+				<label value="衡量指标未设" style="color:red"
+					onClick="tw.addDtls(self)" />
+			</listcell>
+		</listitem>
+		<listitem context="guding">
+			<listcell>
+				<label value="5" />
+			</listcell>
+			<listcell>
+				<combobox value="内部流程" context="i" disabled="true">
+					<comboitem label="财务" context="f" />
+					<comboitem label="顾客" context="c" />
+					<comboitem label="内部流程" context="i" />
+					<comboitem label="创新与学习" context="s" />
+				</combobox>
+			</listcell>
+			<listcell>
+				<intbox onChange="tw.onDos(self)" />
+			</listcell>
+			<listcell>
+				<label value="衡量指标未设" style="color:red"
+					onClick="tw.addDtls(self)" />
+			</listcell>
+		</listitem>
+		<listitem context="guding">
+			<listcell>
+				<label value="6" />
+			</listcell>
+			<listcell>
+				<combobox value="内部流程" context="i" disabled="true">
+					<comboitem label="财务" context="f" />
+					<comboitem label="顾客" context="c" />
+					<comboitem label="内部流程" context="i" />
+					<comboitem label="创新与学习" context="s" />
+				</combobox>
+			</listcell>
+			<listcell>
+				<intbox onChange="tw.onDos(self)" />
+			</listcell>
+			<listcell>
+				<label value="衡量指标未设" style="color:red"
+					onClick="tw.addDtls(self)" />
+			</listcell>
+		</listitem>
+		<listitem context="guding">
+			<listcell>
+				<label value="7" />
+			</listcell>
+			<listcell>
+				<combobox value="创新与学习" context="s" disabled="true">
+					<comboitem label="财务" context="f" />
+					<comboitem label="顾客" context="c" />
+					<comboitem label="内部流程" context="i" />
+					<comboitem label="创新与学习" context="s" />
+				</combobox>
+			</listcell>
+			<listcell>
+				<intbox onChange="tw.onDos(self)" />
+			</listcell>
+			<listcell>
+				<label value="衡量指标未设" style="color:red"
+					onClick="tw.addDtls(self)" />
+			</listcell>
+		</listitem>
+		<listitem context="guding">
+			<listcell>
+				<label value="8" />
+			</listcell>
+			<listcell>
+				<combobox value="创新与学习" context="s" disabled="true">
+					<comboitem label="财务" context="f" />
+					<comboitem label="顾客" context="c" />
+					<comboitem label="内部流程" context="i" />
+					<comboitem label="创新与学习" context="s" />
+				</combobox>
+			</listcell>
+			<listcell>
+				<intbox onChange="tw.onDos(self)" />
+			</listcell>
+			<listcell>
+				<label value="衡量指标未设" style="color:red"
+					onClick="tw.addDtls(self)" />
+			</listcell>
+		</listitem>
+
+		<listfoot>
+			<listfooter label="当前权重" id="last" />
+
+		</listfoot>
+	</listbox>
+
+
+</window>
+

@@ -1,0 +1,141 @@
+<window use="com.fsb.asse.TextWnd" id="tw">
+	<style>
+		.myimg { margin: 5px; border: 1px solid #B0C75E; }
+		div.z-column-cnt { text-align: center; font-weight: bold; }
+		div.z-row-cnt span { font-family: arial, sans-serif; color:
+		#0E3A99; }
+	</style>
+
+	<button label="test" onClick="tw.onTest()" />
+	
+
+	<grid hflex="1" vflex="1" id="yes" >
+		<columns>
+			<column label="" sort="auto" />
+			<column label="项目编号" sort="auto" />
+			<column label="构面" />
+			<column label="权重" sort="auto" />
+			<column label="每一构面得分" />
+			<column label="每一构面加权评分" sort="auto" />
+			<column label="" sort="auto" />
+		</columns>
+		<rows>
+			<row>
+				<detail open="true">
+					<hlayout>
+						<grid>
+							<columns sizable="true">
+								<column label="衡量指标" sort="auto" />
+								<column label="指标权重" />
+								<column label="达成状况" sort="auto" />
+								<column label="员工自评" sort="auto" />
+								<column label="主管评分" sort="auto" />
+								<column label="指标得分" sort="auto" />
+								<column label="" sort="auto" />
+							</columns>
+							<rows>
+								<row>
+
+									<textbox />
+									<textbox />
+									<textbox />
+									<textbox />
+									<textbox />
+									<textbox />
+									<vbox>
+										<button label="+" />
+										<label value="-" />
+									</vbox>
+								</row>
+								<row>
+
+									<textbox />
+									<textbox />
+									<textbox />
+									<textbox />
+									<textbox />
+									<textbox />
+									<vbox>
+										<button label="+" />
+										<label value="-" />
+									</vbox>
+								</row>
+								<row>
+
+									<textbox />
+									<textbox />
+									<textbox />
+									<textbox />
+									<textbox />
+									<textbox />
+									<vbox>
+										<button label="+" />
+										<label value="-" />
+									</vbox>
+								</row>
+
+							</rows>
+
+						</grid>
+					</hlayout>
+				</detail>
+				<label value="1" />
+				<combobox value="财务" />
+				<textbox />
+				<textbox />
+				<textbox />
+				<vbox>
+					<button label="+" />
+					<label value="-" />
+				</vbox>
+			</row>
+
+			<row>
+				<detail open="true">
+					<hlayout>
+						<grid>
+							<columns sizable="true">
+								<column label="衡量指标" sort="auto" />
+								<column label="指标权重" />
+								<column label="达成状况" sort="auto" />
+								<column label="员工自评" sort="auto" />
+								<column label="主管评分" sort="auto" />
+								<column label="指标得分" sort="auto" />
+								<column label="" sort="auto" />
+							</columns>
+							<rows>
+							<row>
+
+									<textbox />
+									<textbox />
+									<textbox />
+									<textbox />
+									<textbox />
+									<textbox />
+									<vbox>
+										<button label="+" />
+										<label value="-" />
+									</vbox>
+								</row>
+
+							</rows>
+
+						</grid>
+					</hlayout>
+				</detail>
+				<label value="2" />
+				<combobox value="财务" />
+				<textbox />
+				<textbox />
+				<textbox />
+				<vbox>
+					<button label="+" />
+					<label value="-" />
+				</vbox>
+			</row>
+
+
+		</rows>
+	</grid>
+</window>
+

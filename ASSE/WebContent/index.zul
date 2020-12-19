@@ -1,0 +1,204 @@
+<window use="com.fsb.asse.wnd.IndexWnd" id="index">
+	<zk>
+		<style>
+			.breeze .complex-layout, .breeze .complex-layout .z-south,
+			.breeze .complex-layout .z-west { background: #F7F7F7; }
+			.z-borderlayout { background: #FFFFFF } .complex-layout
+			.z-north { background: #0095CC; }
+			img.complex-layout-header-img { padding: 0 10px; }
+			.complex-layout-header-label { position: relative; top:
+			-30px; padding-left: 40px; font-size: 24px; color: White;
+			font-weight: bold; } .inner-border, .inner-border .z-north,
+			.inner-border .z-west, .inner-border .z-south, .inner-border
+			.z-east { background: #FFFFFF; } .dl-link { text-decoration:
+			none; cursor: pointer; }
+		</style>
+		<div style="background: #0095CC;">
+			<image sclass="complex-layout-header-img"
+				src="/images/logo.png" />
+		</div>
+		<borderlayout height="1500px">
+			<north border="0">
+				<div>
+
+					<toolbar>
+						<toolbarbutton label="单位"
+							style="font-size:10pt" />
+						<toolbarbutton id="DEPT" style="font-size:10pt" />
+						<toolbarbutton label="姓名"
+							style="font-size:10pt" />
+						<toolbarbutton id="USERNAME"
+							style="font-size:10pt" />
+
+						<toolbarbutton label="职称"
+							style="font-size:10pt" />
+						<toolbarbutton id="CPOST"
+							style="font-size:10pt" />
+
+						<toolbarbutton label="员编"
+							style="font-size:10pt" />
+						<toolbarbutton id="NO" style="font-size:10pt" />
+					</toolbar>
+				</div>
+
+			</north>
+
+			<!-- Sidebar -->
+			<west width="200px" border="0" flex="true" splittable="true"
+				collapsible="true" margins="0,5,0,0">
+				<vlayout spacing="0">
+					<!-- <panel width="100%" border="normal"
+						title="Navigation">
+						<panelchildren style="padding:5px;">
+						<vbox>
+						<toolbarbutton label="绩效考核" />
+						<toolbarbutton label="历年考核查询" />
+						</vbox>
+						</panelchildren>
+						</panel> -->
+					<tree id="tree">
+						<treechildren>
+							<treeitem>
+								<treerow>
+									<treecell label="绩效考核" />
+								</treerow>
+								<treechildren>
+									<treeitem>
+										<treerow>
+											<treecell label="年初目标制定"
+												onClick="index.onDoTarget()" id="nianchutarget" />
+										</treerow>
+									</treeitem>
+									<treeitem>
+										<treerow>
+											<treecell label="年中绩效面谈" />
+										</treerow>
+									</treeitem>
+									<treeitem>
+										<treerow>
+											<treecell label="年终绩效评分" />
+										</treerow>
+									</treeitem>
+								</treechildren>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell label="历史查询" />
+								</treerow>
+							</treeitem>
+						</treechildren>
+					</tree>
+				</vlayout>
+			</west>
+			<!-- 	<east width="130px" title="状态" flex="true">
+				<vlayout>
+				<panel width="100%" border="normal" title="得分">
+				<panelchildren>
+				
+				<grid style="border:0;">
+				<rows>
+				
+				<row>
+				<div>
+				<label value="个人目标得分" />
+				<separator
+				orient="vertical" />
+				<label value="70分" />
+				</div>
+				</row>
+				<row>
+				<div>
+				<label value="职场行为得分" />
+				<separator
+				orient="vertical" />
+				<label value="20分" />
+				</div>
+				</row>
+				<row>
+				<div>
+				<label value="法令遵循扣项" />
+				<separator
+				orient="vertical" />
+				<label value="0分" />
+				</div>
+				</row>
+				<row>
+				<div>
+				<label value="绩效得分" />
+				<separator
+				orient="vertical" />
+				<label value="90分" />
+				</div>
+				</row>
+				
+				
+				
+				
+				</rows>
+				</grid>
+				</panelchildren>
+				</panel>
+				<panel width="100%" border="normal" title="完成度">
+				<panelchildren>
+				
+				<grid style="border:0;">
+				<rows>
+				<row>
+				<div>
+				
+				<div>
+				<label value="未完成" />
+				
+				
+				</div>
+				<label value="个人目标" />
+				
+				
+				<div>
+				<label value="未完成" />
+				
+				</div>
+				<label value="职场行为" />
+				
+				
+				</div>
+				</row>
+				<row>
+				<hbox>
+				<button label="保存"
+				onClick="index.onSaveCheck()" />
+				<button label="提交" />
+				
+				</hbox>
+				
+				</row>
+				</rows>
+				</grid>
+				</panelchildren>
+				</panel>
+				</vlayout>
+				</east> -->
+			<!-- Content -->
+			<center>
+				<borderlayout sclass="inner-border">
+					<!-- 	<north border="0" height="4%" margins="2,3,0,0">
+						<label value="HOME" style="font-size:20px;" />
+						</north> -->
+					<center border="0" margins="0,3,3,3" id="inc">
+						<include id="includePage"></include>
+					</center>
+
+
+				</borderlayout>
+			</center>
+			<south size="40px" border="0"
+				style="background: none repeat scroll 0 0 ;">
+				<toolbar mold="panel" align="center">
+
+					Powered by Fubon Bank
+
+				</toolbar>
+			</south>
+		</borderlayout>
+	</zk>
+</window>
